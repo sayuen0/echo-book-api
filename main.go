@@ -15,8 +15,14 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
+	// users
 	e.GET("/users/:id", api.C(api.GetUser))
 	e.POST("/users", api.C(api.CreateUser))
+
+	// statics
+	e.Static("/static", "assets")
+	e.File("/", "assets/index.html")
+
 	log.Fatal(e.Start(":8888"))
 }
 
