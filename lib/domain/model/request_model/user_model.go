@@ -17,4 +17,3 @@ type UserUpdateRequest struct {
 type UserDeleteRequest struct {
 	Id int64 `json:"id" validate:"required"`
 }
-

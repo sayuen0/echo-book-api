@@ -10,5 +10,6 @@ require (
 	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e // indirect
 	golang.org/x/net v0.0.0-20210614182718-04defd469f4e // indirect
 	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22 // indirect
+	golang.org/x/tools v0.1.4 // indirect
 	gopkg.in/go-playground/validator.v9 v9.31.0
 )
